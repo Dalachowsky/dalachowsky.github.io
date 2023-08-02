@@ -1,0 +1,26 @@
+
+
+title: Kacper Dalach
+email: dalachowsky@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+author_name: Kacper Dalach
+github_username:  Dalachowsky
+linkedin_name: Kacper Dalach
+linkedin_url: https://www.linkedin.com/
+heading_msg: Test blog description with multiple rows so that i can try it
+
+# Build settings
+theme: dheme
+
+plugins:
+  - jekyll-gitactivity
+
+docs:
+  - title: Guides
+    url: guides/index.html
+  - title: About
+    url: about.html
