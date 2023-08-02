@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include sidebar.html %}
+    <div class="content-container">
+    <h1>Posts</h1>
+    {% for post in paginator.posts %}
+    <div class="post-summary">
+        <hr>
+        <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+        <h3>{{ post.date | date: "%F"}}</h3>
+        {% if post.excerpt %}
+            {{ post.excerpt }}
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    <!-- Pagination links -->
+    <hr>
+    <div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous
+        </a>
+    {% else %}
+        <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">
+        Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+        <span class="next ">Next</span>
+    {% endif %}
+    </div></div>
+    {{page.content}}
+</body>
+</html>

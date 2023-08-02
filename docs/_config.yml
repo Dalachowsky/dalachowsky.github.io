@@ -33,7 +33,7 @@ linkedin_url: https://www.linkedin.com/in/kacper-dalach-6b8b97243/
 heading_msg: A blog on embedded software development
 
 # Build settings
-theme: dheme
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate

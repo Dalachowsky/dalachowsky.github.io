@@ -1,0 +1,20 @@
+
+<div class="sidebar">
+    <div class="sidebar-heading">
+            <h1><a href="/">{{site.github_username}}</a></h1>
+            <p>{{site.heading_msg}}</p>
+    </div>
+    <div class="navbar">
+        {% for item in site.docs %}
+            <div class="navbar-item"><a href="{{%item.url%}}">{{%item.title%}}</a></div>
+        {% endfor %}
+    </div>
+    <div class="sidebar-footer">
+        <ul>
+            <li><i class="fa fa-linkedin-square"></i><a href="{{site.linkedin_url}}"> @{{site.linkedin_name}}</a></li>
+            <li><i class="fa fa-github-square"></i><a href="https://github.com/{{site.github_username}}"> @{{site.github_username}}</a></li>
+            <li><i class="fa fa-envelope-square"></i> <a href="{{site.email}}"></a> {{site.email}}</li>
+            <li><a href="/feed.xml"><i class="fa fa-rss-square"></i></a> RSS</li>
+        </ul>
+    </div>
+</div>

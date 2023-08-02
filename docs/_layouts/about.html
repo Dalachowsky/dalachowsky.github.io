@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include sidebar.html %}
+    <div class="content-container">
+        <div>
+        <img src="{{ site.portrait }}" class="portrait">
+        </div>
+        <p>{{ content }}</p>
+    </div>
+</body>
+</html>
