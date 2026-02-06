@@ -1,9 +1,11 @@
 ---
 ---
 @import "sidebar";
+
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url(/assets/images/dot-grid.webp);
+    font-family: monospace;
+    color: #bedfe5;
+    background-color: #11262a;
     margin: 0;
 }
 
@@ -13,24 +15,46 @@ img.portrait {
     margin-bottom: 10px;
     width: 20%;
 }
+
 p {
     text-align: justify;
 }
+
+hr {
+    color: #bedfe5;
+}
+
+a {
+    font-weight: bold;
+    color: #bedfe5;
+}
+
+.highlight {
+    background-color: #0C1A1D;
+    border-radius: 8px;
+    padding: 0.5vh 1vw;
+}
+
+.language-plaintext {
+    color: #C1D553;
+    background-color: #0C1A1D;
+    padding: 1px 5px;
+    border-radius: 4px;
+}
+
 .content-container {
     font-size: medium;
     margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 5%;
     margin-bottom: 30%;
 }
 
 div.post-summary a {
-    color: black;
     text-decoration: none;
 }
 
 div.post-summary a:hover {
-    color: black;
     text-decoration: underline;
 }
 
