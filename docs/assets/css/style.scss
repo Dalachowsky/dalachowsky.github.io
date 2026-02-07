@@ -1,6 +1,6 @@
 ---
 ---
-@import "sidebar";
+@import "navbar";
 
 body {
     font-family: monospace;
@@ -43,10 +43,10 @@ a {
 }
 
 .content-container {
-    font-size: medium;
+    font-size: 14px;
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 30%;
 }
 

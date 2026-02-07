@@ -1,14 +1,13 @@
-<div class="sidebar">
-    <div class="sidebar-heading">
+<div class="navbar">
+    <div class="navbar-heading">
         <h1><a href="/">{{site.github_username}}</a></h1>
-        <p>{{site.heading_msg}}</p>
     </div>
     <div class="navbar">
         {% for item in site.docs %}
         <div class="navbar-item"><a href="{{%item.url%}}">{{%item.title%}}</a></div>
         {% endfor %}
     </div>
-    <div class="sidebar-footer">
+    <div class="navbar-footer">
         <ul>
             <li><i class="fa fa-linkedin-square"></i><a href="{{site.linkedin_url}}"> @{{site.linkedin_name}}</a></li>
             <li><i class="fa fa-github-square"></i><a href="https://github.com/{{site.github_username}}">
